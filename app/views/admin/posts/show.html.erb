@@ -1,0 +1,9 @@
+<h1>
+	<%= @post.title %>
+</h1>
+<p>
+	<%= @post.context %>
+</p>
+<% if @post.image.present? %>
+<%= image_tag @post.image %>
+<% end %>
