@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'home#index'
   namespace :admin do
   	get '/', to:'home#index'
+  	resources :posts
   end
 end
